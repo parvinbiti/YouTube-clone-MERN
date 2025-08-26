@@ -7,7 +7,7 @@ mongoose
 
 
 
-    mongodb+srv://sani:Hh1287@youtube.7upqego.mongodb.net/?retryWrites=true&w=majority&appName=youtube,
+    `mongodb+srv://sani:Hh1287@youtube.7upqego.mongodb.net/?retryWrites=true&w=majority&appName=youtube`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
