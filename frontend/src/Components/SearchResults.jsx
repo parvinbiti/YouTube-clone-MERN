@@ -17,8 +17,10 @@ import "react-toastify/dist/ReactToastify.css";
 import { useSelector } from "react-redux";
 
 function SearchResults() {
-  const backendURL = "https://youtube-clone-mern-backend.vercel.app"
+  // const backendURL = "https://youtube-clone-mern-backend.vercel.app"
   // const backendURL = "http://localhost:3000";
+  const backendURL = process.env.REACT_APP_API_URL;
+
   const { data } = useParams();
   const [searchedVideoData, setsearchedVideoData] = useState([]);
   const [searchedChannelData, setsearchedChannelData] = useState([]);
