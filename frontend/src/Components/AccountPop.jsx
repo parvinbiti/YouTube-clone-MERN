@@ -14,7 +14,9 @@ import { SiYoutubestudio } from "react-icons/si";
 import { useSelector } from "react-redux";
 
 function AccountPop() {
-  const backendURL = "https://youtube-clone-mern-backend.vercel.app"
+  // const backendURL = "https://youtube-clone-mern-backend.vercel.app"
+  const backendURL = process.env.REACT_APP_API_URL;
+
   // const backendURL = "http://localhost:3000";
   const [profile, setProfile] = useState("");
   const [theme, setTheme] = useState(() => {
