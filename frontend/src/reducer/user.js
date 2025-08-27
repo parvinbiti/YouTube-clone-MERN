@@ -11,7 +11,7 @@ const initialState = {
 export const fetchUserData = createAsyncThunk(
   "user/fetchUserData",
   async () => {
-    const response = await fetch("https://youtube-clone-mern-backend.vercel.app/userdata", {
+    const response = await fetch("https://youtube-clone-mern-2backend.onrender.com//userdata", {
       credentials: "include",
     });
     const data = await response.json();
