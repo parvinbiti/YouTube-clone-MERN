@@ -18,7 +18,8 @@ import { BiSearch } from "react-icons/bi";
 import { useSelector } from "react-redux";
 
 function Navbar2() {
-  const backendURL = "https://youtube-clone-mern-2backend.onrender.com/";
+  // const backendURL = "https://youtube-clone-mern-2backend.onrender.com/";
+  const backendURL = process.env.REACT_APP_API_URL;
   // const backendURL = "http://localhost:3000";
   const [profilePic, setProfilePic] = useState();
   const [userVideos, setUserVideos] = useState([]);
