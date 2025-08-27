@@ -20,8 +20,10 @@ import { BiCommentDetail } from "react-icons/bi";
 import { MdOutlineAutoFixHigh } from "react-icons/md";
 
 function LeftPanel2() {
-  const backendURL = "https://youtube-clone-mern-backend.vercel.app"
+  // const backendURL = "https://youtube-clone-mern-backend.vercel.app"
   // const backendURL = "http://localhost:3000";
+  const backendURL = process.env.REACT_APP_API_URL;
+
   const [profileIMG, setProfileIMG] = useState();
   const [channel, setChannel] = useState("");
   const [channelId, setChannelId] = useState();
