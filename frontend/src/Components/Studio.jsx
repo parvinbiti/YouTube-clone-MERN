@@ -32,8 +32,10 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LanguageIcon from "@mui/icons-material/Language";
 
 function Studio() {
-  const backendURL = "https://youtube-clone-mern-backend.vercel.app"
+  // const backendURL = "https://youtube-clone-mern-backend.vercel.app"
   // const backendURL = "http://localhost:3000";
+  const backendURL = process.env.REACT_APP_API_URL;
+
   const [isChannel, setisChannel] = useState();
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedThumbnail, setSelectedThumbnail] = useState(null);
