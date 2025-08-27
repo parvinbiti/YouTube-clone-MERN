@@ -13,7 +13,7 @@ import { useSelector } from "react-redux";
 function LeftPanel2() {
   const backendURL = "https://youtube-clone-mern-2backend.onrender.com"
   // const backendURL = "http://localhost:3000";
-  const backendURL = process.env.REACT_APP_API_URL;
+  // const backendURL = process.env.REACT_APP_API_URL;
 
   const { id } = useParams();
   const [videodata, setVideoData] = useState();
