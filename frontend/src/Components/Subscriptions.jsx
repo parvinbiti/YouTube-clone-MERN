@@ -11,9 +11,9 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { useSelector } from "react-redux";
 
 function Subscriptions() {
-  // const backendURL = "https://youtube-clone-mern-backend.vercel.app";
+  const backendURL = "https://youtube-clone-mern-2backend.onrender.com";
   // const backendURL = "http://localhost:3000";
-  const backendURL = process.env.REACT_APP_API_URL;
+  // const backendURL = process.env.REACT_APP_API_URL;
 
   const [subscriptions, setSubscriptions] = useState([]);
   const [subsVideos, setSubsVideos] = useState([]);
